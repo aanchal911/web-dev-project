@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Aasha Plushies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        .content-container { max-width: 800px; margin: 50px auto; padding: 30px; background-color: #fff; border-radius: var(--border-radius); box-shadow: var(--box-shadow); line-height: 1.7; }
+        .content-container h1 { text-align: center; margin-bottom: 35px; font-size: 2.5em; }
+        .faq-item { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .faq-question { font-weight: 600; font-size: 1.2em; margin-bottom: 10px; color: var(--primary-color); cursor: pointer; /* Optional: for JS toggle */ }
+        .faq-answer { color: var(--text-color); padding-left: 15px; /* Optional: for JS toggle display: none; */ }
+        .footer-links { text-align: center; margin-top: 10px; font-size: 0.9em; }
+        .footer-links a { margin: 0 5px; color: var(--text-color); text-decoration: none; }
+        .footer-links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Aasha Plushies</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li> <!-- Add FAQ link -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What are your plushies made of?</h3>
+                <p class="faq-answer">Our plushies are made from high-quality, super-soft polyester fabrics and filled with hypoallergenic polyfill stuffing. We prioritize safety and ensure all materials meet relevant safety standards.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How do I care for my plushie?</h3>
+                <p class="faq-answer">We recommend spot cleaning with mild soap and water for minor messes. For a deeper clean, check the care tag on your specific plushie. Some may be machine washable on a gentle cycle in a pillowcase, but air drying is always best to maintain shape and softness.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What are your shipping options?</h3>
+                <p class="faq-answer">We offer standard and expedited shipping options within [Your Country/Region]. Shipping costs and estimated delivery times are calculated at checkout based on your location and chosen method. Please see our [Link to Shipping Policy Page, if applicable] for more details.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What is your return policy?</h3>
+                <p class="faq-answer">We want you to love your plushie! If you're not completely satisfied, you can return unused items in their original condition within 30 days of purchase for a full refund or exchange. Please visit our <a href="terms.html#returns">Returns & Exchanges</a> section in the Terms of Service for detailed instructions.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Do you ship internationally?</h3>
+                <p class="faq-answer">Currently, we ship to [List Countries or state "select countries"]. International shipping rates and times vary. Please proceed to checkout to see if shipping is available to your location and view the associated costs.</p>
+            </div>
+
+             <div class="faq-item">
+                <h3 class="faq-question">How can I track my order?</h3>
+                <p class="faq-answer">Once your order ships, you will receive a confirmation email with a tracking number and a link to track your package.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aasha Plushies. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="faq.html">FAQ</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </footer>
+    <!-- Optional: Add script for FAQ toggle functionality -->
+    <!-- <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script> -->
+</body>
+</html>
